@@ -1,0 +1,227 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #272626;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.menu__title {
+  font-size: 2rem;
+  line-height: 46px;
+  color: #D3D4DA;
+}
+
+.menu__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #D3D4DA;
+}
+
+.menu__link:hover {
+  background-color: #D3D4DAC7;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.content {
+  width: 90%;
+  max-width: 980px;
+  margin: 30px auto;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.content__alert {
+  display: none;
+  position: absolute;
+  width: 70%;
+  max-width: 300px;
+  top: 80px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  font-size: 1.4rem;
+  -webkit-box-shadow: 2px 5px 8px #0000007D;
+  box-shadow: 2px 5px 8px #0000007D;
+  background-color: #0EB177;
+  border-radius: 30px;
+  line-height: 20px;
+  -webkit-animation: showAlert 0.25s ease-in-out both;
+  animation: showAlert 0.25s ease-in-out both;
+  color: white;
+}
+
+.content__alert--close {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.content__preview {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  height: 300px;
+  background: #79B8FF;
+  border-radius: 40%;
+}
+
+.content__control {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__control--input {
+  width: 20%;
+  height: 40px;
+  margin: auto;
+  padding: 10px;
+  background-color: transparent;
+  color: #D3D4DA;
+  border: 1px solid #424242;
+  border-radius: 30px;
+}
+
+.content__result {
+  width: 100%;
+  margin: 20px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__result--code {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+  border: 1px solid #424242;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.content__result--code #code {
+  width: 100%;
+  height: 100px;
+  color: #D3D4DAC7;
+  background-color: transparent;
+  resize: none;
+  border: none;
+}
+
+.content__result--code #copy {
+  width: 80px;
+  height: 40px;
+  background-color: #79B8FF;
+  border: none;
+  border-radius: 30px;
+  color: white;
+}
+
+.content__result--code #copy:hover {
+  background-color: #79B8FFC7;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.copyright {
+  height: 48px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  text-align: center;
+  color: #D3D4DAC7;
+  font-size: 1.4rem;
+  line-height: 48px;
+}
+
+@-webkit-keyframes showAlert {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes showAlert {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

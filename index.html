@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="author" content="Syrth">
+  <meta name="description" content="This generator will help you create the border-radius effects on your web pages.">
+  <meta name="keywords" content="web design, border radius, css, css3 border radius, firefox border radius, webkit border radius">
+  <meta name="robots" content="index">
+
+  <title>CSS Border Radius Generator</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="menu">
+    <h1 class="menu__title">BorderRadius</h1>
+    <a href="https://github.com/Syrth" class="menu__link" rel="external nofollow">GitHub</a>
+  </header>
+  <main class="content">
+    <div class="content__alert">
+      <span class="content__alert--close" onclick="this.parentElement.style.display='none';">&times;</span>
+      Copied to clipboard.
+    </div>
+    <div class="content__preview"></div>
+    <section id="toolbox">
+      <div class="content__control">
+        <input type="number" class="content__control--input" value="40" placeholder="↑left" id="top-left">
+        <input type="number" class="content__control--input" value="40" placeholder="↑right" id="top-right">
+        <input type="number" class="content__control--input" value="40" placeholder="↓right" id="bottom-right">
+        <input type="number" class="content__control--input" value="40" placeholder="↓left" id="bottom-left">
+      </div>
+      <div class="content__result">
+        <div class="content__result--code">
+          <textarea id="code" readonly>
+-webkit-border-radius: 40%;
+-moz-border-radius: 40%;
+border-radius: 40%;
+          </textarea>
+          <button id="copy" onclick="copyToClipboard();">Copy</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="copyright">
+    Copyright &copy; 2021, Syrth All rights reserved.
+  </footer>
+  <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
